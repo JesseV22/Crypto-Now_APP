@@ -1,3 +1,54 @@
+# 📱 Crypto Now - Documentação do Aplicativo
+
+## 🧭 Visão Geral
+**Crypto Now** é um aplicativo Android desenvolvido para fornecer informações em tempo real sobre criptomoedas, incluindo preços, variações percentuais e capitalização de mercado.  
+O app exibe uma lista de criptomoedas em alta (**Top Gainers**) e uma seção de **Tendências (Trending)**, permitindo que os usuários acompanhem o mercado de forma prática e visual.
+
+---
+
+## 🎯 Objetivo
+Oferecer uma interface simples e intuitiva para entusiastas de criptomoedas, com atualizações frequentes de dados de mercado e detalhes sobre moedas específicas.
+
+---
+
+## 👥 Público-Alvo
+- Usuários interessados em criptomoedas e investimentos.
+- Investidores que buscam acompanhar preços e tendências em tempo real.
+- Entusiastas de tecnologia que desejam explorar dados de mercado de forma acessível.
+
+---
+
+## 🔍 Funcionalidades
+
+### 📈 Exibição de Criptomoedas
+- **Top Gainers**: Lista horizontal com as 3 criptomoedas com maior variação positiva nas últimas 24 horas.
+- **Trending**: Lista vertical com várias criptomoedas ordenadas por capitalização de mercado, exibindo:
+  - Preço atual  
+  - Variação percentual  
+  - Capitalização de mercado  
+
+### 🔄 Atualização em Tempo Real
+- Preços atualizados **a cada segundo** via API da Binance.
+- Variações percentuais atualizadas **a cada 15 segundos**.
+
+### 📊 Detalhes da Criptomoeda
+- Ao clicar em uma moeda da lista **Trending**, o usuário é levado à **tela de detalhes** *(em desenvolvimento)*.
+
+### 🌙 Modo Noturno
+- Suporte a **tema escuro** com base nas preferências do sistema.
+
+### 🪙 Ícone Personalizado
+- Ícone adaptativo com o logotipo **Crypto Now**, compatível com Android 8.0+.
+
+---
+
+## 🧱 Arquitetura do Aplicativo
+
+com.example.cryptonow ├── activities │ ├── MainActivity.java │ └── DetailActivity.java (em desenvolvimento) ├── adapters │ ├── TopGainerAdapter.java │ └── CryptoAdapter.java ├── models │ └── Crypto.java ├── res/layout │ ├── activity_main.xml │ ├── item_top_gainer.xml │ └── item_crypto.xml ├── res/mipmap │ └── ic_launcher (ícones em múltiplas densidades) ├── res/drawable │ └── logo_crypto_now.png
+
+markdown
+Copiar
+Editar
 
 ---
 
@@ -70,8 +121,3 @@
 - Atualizar bibliotecas (OkHttp, Gson) periodicamente  
 - Monitorar mudanças nas APIs  
 - Adicionar testes unitários e testar em múltiplos dispositivos
-
----
-
-
-📅 **Última Atualização**: 29 de abril de 2025
