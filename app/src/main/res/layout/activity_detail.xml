@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Botão de Voltar -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="@string/back_button"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Container para Ícone e Símbolo -->
+    <LinearLayout
+        android:id="@+id/cryptoInfoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:id="@+id/ivCryptoDetailIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/crypto_icon" />
+
+        <TextView
+            android:id="@+id/tvCryptoSymbolDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTCUSDT"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/tvCryptoPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="$94,839.31"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Variação Percentual -->
+    <TextView
+        android:id="@+id/tvCryptoChangeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="🔼 0.39%"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:background="@drawable/change_background"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Gráfico -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botões de Intervalo de Tempo -->
+    <LinearLayout
+        android:id="@+id/timeOptionsLayout"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLive"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="LIVE"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn4H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="4H"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn1D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="1D"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn1W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="1S"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn1M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="1M"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="MÁX"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

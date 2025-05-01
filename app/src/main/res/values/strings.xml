@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CryptoNow</string>
+    <string name="top_gainers">Top Gainers</string>
+    <string name="trending">Trending</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="expand_balance">Expand Balance</string>
+    <string name="crypto_icon">Crypto Icon</string>
+    <string name="top_gainer_icon">Top Gainer Icon</string>
+    <string name="back_button">Back Button</string>
+</resources>
